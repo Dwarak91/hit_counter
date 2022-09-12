@@ -1,1 +1,27 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T08:41:38.539Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" version="20.3.0" etag="QsGIgS2dG82KPzDMOamw" type="github"><diagram id="OXYgHugwIASSnN2JcPIf">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-12T08:55:42.268Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="r6SmrgpcN9u8p-CeW4xN" version="20.3.0" type="github">
+  <diagram id="OXYgHugwIASSnN2JcPIf" name="Page-1">
+    <mxGraphModel dx="2253" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KTUtk52o1SFVbfAsysBu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KTUtk52o1SFVbfAsysBu-1" target="KTUtk52o1SFVbfAsysBu-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KTUtk52o1SFVbfAsysBu-1" value="VM created by codespace (devcontainer.json)&lt;br&gt;" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;strokeWidth=1;align=center;outlineConnect=0;dashed=0;outlineConnect=0;shape=mxgraph.aws3d.application_server;fillColor=#ECECEC;strokeColor=#5E5E5E;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="10" y="98" width="123" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="KTUtk52o1SFVbfAsysBu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KTUtk52o1SFVbfAsysBu-2" target="KTUtk52o1SFVbfAsysBu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KTUtk52o1SFVbfAsysBu-2" value="User triggers workflow by any action" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="130" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KTUtk52o1SFVbfAsysBu-6" value="Docker container created within the VM where workflow runs" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.instance;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="115" width="100" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
