@@ -42,3 +42,7 @@ jobs:
       # View file
       - name: view file content
         run: cat test.json
+        
+      # Run curl to get hit counter
+      - name: Get hit counter through curl
+        run: curl http://localhost:5000/
