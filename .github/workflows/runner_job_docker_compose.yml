@@ -32,3 +32,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Test
         run: docker run --network container:webapp-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5000/
+        
+      # Create Json file with output
+      - uses: devops-actions/json-to-file@v1.0.0
+        with:
+          json: '{"test": "test"}'
+          filename: 'test.json'
