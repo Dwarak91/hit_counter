@@ -33,11 +33,15 @@ jobs:
       - name: Test
         run: docker run --network container:webapp-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5000/
         
+      - name: Curl to get latest hit count
+        id: counterstep
+        run: echo "::set-output name=counter::$(curl http://localhost:5000/)"
+        
       # Create Json file with output
       - uses: Dwarak91/log-to-file@0.1
         with:
           filename: 'hit_counter_log.txt'
-          logdata: curl http://localhost:5000/
+          logdata: ${{ steps.counterstep.outputs.counter }}
           
       - name: get log data
         run: cat hit_counter_log.txt
