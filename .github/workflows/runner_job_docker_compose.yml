@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  runner-job:
+  runhitcounter:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -34,12 +34,10 @@ jobs:
         run: docker run --network container:webapp-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5000/
         
       # Create Json file with output
-      - id: logstep
-        uses: Dwarak91/log-to-file@0.1
+      - uses: Dwarak91/log-to-file@0.1
         with:
           filename: 'hit_counter_log.txt'
           logdata: curl http://localhost:5000/
           
-      # Output log data
-      - name: Output log data
-        run: echo ${{steps.logstep.outputs.logs}}
+      - name: get log data
+        run: cat hit_counter_log.txt
