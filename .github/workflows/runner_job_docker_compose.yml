@@ -34,15 +34,7 @@ jobs:
         run: docker run --network container:webapp-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5000/
         
       # Create Json file with output
-      - uses: devops-actions/json-to-file@v1.0.0
+      - uses: Dwarak91/log-to-file@0.1
         with:
-          json: '{"test": "test"}'
-          filename: 'test.json'
-
-      # View file
-      - name: view file content
-        run: cat test.json
-        
-      # Run curl to get hit counter
-      - name: Get hit counter through curl
-        run: curl http://localhost:5000/
+          filename: 'hit_counter_log.txt'
+          logdata: curl http://localhost:5000/
