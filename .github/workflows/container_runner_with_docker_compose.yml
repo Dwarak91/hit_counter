@@ -29,7 +29,7 @@ jobs:
       
       # Install docker and docker-compose
       - name: Install docker and docker-compose
-        run: ./install_docker.sh
+        run: sh install_docker.sh
         shell: bash
 
       # Runs a single command using the runners shell
