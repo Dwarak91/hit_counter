@@ -24,9 +24,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Install docker-compose
-      - name: Install docker-compose
+      # Install docker and docker-compose
+      - name: Install docker and docker-compose
         run: |
+          sudo apt install docker.io
           curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)"  -o /usr/local/bin/docker-compose
           mv /usr/local/bin/docker-compose /usr/bin/docker-compose
           chmod +x /usr/bin/docker-compose
