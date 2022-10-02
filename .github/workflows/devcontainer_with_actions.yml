@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   container-job:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     # Docker Hub image that `container-job` executes in
     container: 
         image: docker://dwarak91/pythondevcontainer:latest
