@@ -44,9 +44,9 @@ jobs:
         run: docker-compose up -d
         
       # Run docker from container
-      - name: Run docker from container
-        run: docker run -v /var/run/docker.sock:/var/run/docker.sock -ti docker
+      #- name: Run docker from container
+      #  run: docker run -v /var/run/docker.sock:/var/run/docker.sock -ti docker
       
       # Runs a set of commands using the runners shell
-      - name: Test
-        run: docker run -v /var/run/docker.sock:/var/run/docker.sock --network container:webapp-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5000/
+      #- name: Test
+      #  run: docker run -v /var/run/docker.sock:/var/run/docker.sock --network container:webapp-frontend appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5000/
