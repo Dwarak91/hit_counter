@@ -45,4 +45,4 @@ jobs:
       
       # Runs a set of commands using the runners shell
       - name: Test
-        run: docker ps
+        run: curl http://localhost:5005/
